@@ -1,0 +1,25 @@
+{
+  "name": "plh23",
+  "version": "1.0.0",
+  "description": "Webroot for Hellenic Open University projects on module PLH23",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akritikos/PLH23"
+  },
+  "author": "Alexandros Kritikos",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/akritikos/PLH23/issues"
+  },
+  "homepage": "https://github.com/akritikos/PLH23#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-uglify": "^3.0.0"
+  }
+}

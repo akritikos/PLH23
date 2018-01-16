@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.settings.openDefaultSettings": false,
+		"files.exclude": {
+			// "**/assets/{css,js}/*": true,
+			"node_modules/*": true,
+			".vscode/": true,
+			".*": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"EditorConfig.editorconfig"z,
+			"msjsdiag.debugger-for-chrome",
+			"idleberg.icon-fonts",
+			"Zignd.html-css-class-completion",
+			"hdg.live-html-previewer",
+			"eg2.vscode-npm-script",
+			"christian-kohler.npm-intellisense"
+		]
+	}
+}
