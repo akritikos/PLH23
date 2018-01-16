@@ -15,7 +15,7 @@
 	},
 	"extensions": {
 		"recommendations": [
-			"EditorConfig.editorconfig"z,
+			"EditorConfig.editorconfig",
 			"msjsdiag.debugger-for-chrome",
 			"idleberg.icon-fonts",
 			"Zignd.html-css-class-completion",
