@@ -11,13 +11,14 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
 		 crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css">
-		<title>Το Κουλούρι: Αρχική Σελίδα</title>
+		<title>Εγγραφή νέου μέλους</title>
 	</head>
 
 	<body>
 		<script src="https://use.fontawesome.com/b90a8293d8.js"></script>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 				<img src="assets/img/logo.png" alt="Logo" class="navbar-brand">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
 				 aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +35,7 @@
 						<a class="nav-item nav-link fa fa-institution" href="#"> Πολιτισμός</a>
 						<a class="nav-item nav-link fa fa-globe" href="kosmos.html"> Κόσμος</a>
 					</div>
+
 					<div class="social ml-auto">
 						<a href="https://www.facebook.com" target="_blank">
 							<img src="assets/img/social_facebook.svg" alt="Facebook Logo">
@@ -48,69 +50,98 @@
 							<img src="assets/img/social_rss.svg" alt="">
 						</a>
 					</div>
-					<form class="" id="login" action="signup.html">
+					<form class="" id="login">
 						<input type="submit" value=" Εγγραφή" class="btn btn-sm btn-primary">
-						<button class="btn btn-sm btn-info fa fa-user">
-							</span> Είσοδος</button>
+						<button class="btn btn-sm btn-info fa fa-user"> Είσοδος</button>
 					</form>
 				</div>
 			</nav>
 		</header>
 		<div class="container-fluid" id="content">
 			<div class="row">
-				<section class="col-10 row" id="articles">
-					<article class="col-sm-12 col-md-6 row">
-						<header>
-							<a href="politiki.html">Αδίστακτη σπείρα κακοποιών καλεί τυχαία τηλέφωνα και παίζει τον ύμνο του ΠΑΣΟΚ</a>
-						</header>
-						<div class="col-md-12 col-lg-6">
-							<img class="img-fluid rounded thumbnail" src="assets/img/article_pasok.jpg" alt="">
+				<form class="col-10 row" method="post" action="scripts/form_subscribe.php">
+					<section class="col-12 col-lg-8 offset-lg-2 form-controls">
+						<div class="form-group row">
+							<label class="col-form-label col-md-4" for="name">Όνομα
+								<span class="required">*</span>
+							</label>
+							<div class="col-md-8">
+								<input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Εισάγετε Όνομα">
+							</div>
 						</div>
-						<div class="col-md-12 col-lg-6 summary">
-							<p>Αλλεπάλληλα είναι το τελευταίο 48ωρο τα κρούσματα τηλεφωνημάτων σε ανύποπτους πολίτες, με τους αδίστακτους κακοποιούς
-								να περιμένουν να σηκώσει κάποιος το τηλέφωνο και αμέσως να βάζουν τον ύμνο του ΠΑΣΟΚ να παίζει στη διαπασών.</p>
+						<div class="form-group row">
+							<label class="col-form-label col-md-4" for="surname">Επώνυμο
+								<span class="required">*</span>
+							</label>
+							<div class="col-md-8">
+								<input type="name" class="form-control" id="surname" aria-describedby="surname" placeholder="Εισάγετε Επώνυμο">
+							</div>
 						</div>
-
-					</article>
-					<article class="col-sm-12 col-md-6 row">
-						<header>
-							<a href="#">Πολιτικό άσυλο ζήτησε και έλαβε από την Ελλάδα πρωτοετής Κύπριος φοιτητής που δεν έκανε παρέα μόνο με Κύπριους</a>
-						</header>
-						<div class="col-md-12 col-lg-6">
-							<img class="img-fluid rounded thumbnail" src="assets/img/article_kyp.jpg" alt="">
+						<div class="form-group row">
+							<label class="col-form-label col-md-4" for="email">Email
+								<span class="required">*</span>
+							</label>
+							<div class="col-md-8">
+								<input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Εισάγετε Email">
+							</div>
 						</div>
-						<div class="col-md-12 col-lg-6 summary">
-							<p>Πολύ δύσκολες στιγμές περνάει τους τελευταίους μήνες ο νεαρός Στάθης Ευσταθίου, ο οποίος γράφτηκε φέτος στο πρώτο
-								έτος της σχολής του στο Πανεπιστήμιο του Πειραιά. Ο 20χρονος με καταγωγή από την Κύπρο, φέρεται να δέχεται απειλές
-								ακόμα ..</p>
+						<div class="form-group row">
+							<label class="col-form-label col-md-4" for="email">Κωδικός
+								<span class="required">*</span>
+							</label>
+							<div class="col-md-8">
+								<input type="password" class="form-control" id="password" aria-describedby="password" placeholder="Εισάγετε Κωδικό">
+							</div>
 						</div>
-					</article>
-					<article class="col-sm-12 col-md-6 row">
-						<header>
-							<a href="kosmos.html">Σε sequel του βίντεο της αποφοίτησής του θα πρωταγωνιστήσει ο Χάρισον Φορντ</a>
-						</header>
-						<div class="col-md-12 col-lg-6">
-							<img class="img-fluid rounded thumbnail" src="assets/img/article_ford.jpg" alt="">
+						<div class="form-group row">
+							<label class="col-form-label col-md-4" for="passwordConfirm">Επιβεβαίωση Κωδικού
+								<span class="required">*</span>
+							</label>
+							<div class="col-md-8">
+								<input type="password" class="form-control" id="passwordConfirm" aria-describedby="password" placeholder="Επιβεβαιώστε τον Κωδικό">
+							</div>
 						</div>
-						<div class="col-md-12 col-lg-6 summary">
-							<p>«Φόρα» φαίνεται πως έχει πάρει τα τελευταία χρόνια ο Χάρισον Φορντ, ο οποίος μετά την συμμετοχή του σε συνέχειες παλαιότερων
-								επιτυχημένων ταινιών του, όπως το «Star Wars», το «Indiana Jones» και το «Blade Runner» , ετοιμάζεται για ακόμη ένα
-								ιδιαίτερα ενδιαφέρον και ταυτόχρονα απαιτητικό πρότζεκτ.</p>
+						<div class="form-group row">
+							<label for="date" class="col-form-label col-md-4">Γενέθλια</label>
+							</label>
+							<div class="col-md-8">
+								<input type="date" class="form-control" id="year" data-date-format>
+							</div>
 						</div>
-					</article>
-					<article class="col-sm-12 col-md-6 row">
-						<header>
-							<a href="oikonomia.html">Θεσσαλονίκη: Eπιχειρηματίας συλλέγει και πουλά το αίμα των εργαζομένων του</a>
-						</header>
-						<div class="col-md-12 col-lg-6">
-							<img class="img-fluid rounded thumbnail" src="assets/img/article_vamp.jpg" alt="">
+						<div class="form-group row">
+							<label for="" class="col-form-label col-md-4">Εμφάνιση του email μου</label>
+							<div class="col-md-8 form-check" id="mailRadio">
+								<div class="form-check-inline">
+									<input type="radio" class="form-check-input" name="hideMail" id="hideMail">
+									<label for="hideMail" class="form-check-label">Απόκρυψη</label>
+								</div>
+								<div class="form-check-inline"></div>
+								<input type="radio" class="form-check-input" name="memberMail" id="memberMail">
+								<label for="memberMail" class="form-check-label">Μόνο σε μέλη</label>
+								<div class="form-check-inline">
+									<input type="radio" class="form-check-input" name="showMail" id="showMail">
+									<label for="showMail" class="form-check-label">Δημόσια</label>
+								</div>
+							</div>
 						</div>
-						<div class="col-md-12 col-lg-6 summary">
-							<p>Στον εισαγγελέα οδηγήθηκε μετά από καταγγελίες 52χρονος επιχειρηματίας, ο οποίος καθώς όλα δείχνουν, συνέλεγε και
-								πουλούσε το αίμα των εργαζομένων του για να μπορέσει να αντεπεξέλθει στις υποχρεώσεις της επιχείρησής του.</p>
+						<div class="form-group row">
+							<label class="col-form-label col-md-4" for="terms">Έχω Διαβάσει και αποδέχομαι τους
+								<a href="#">όρους χρήσης</a>
+								<span class="required">*</span>
+							</label>
+							<div class="col-md-8">
+								<input type="checkbox" class="form-check-inline" id="terms">
+							</div>
 						</div>
-					</article>
-				</section>
+						<div class="form-group row" role="group">
+							<label for="form_actions" hidden>Controls</label>
+							<div class="col-12 text-center" role="group" id="form_actions">
+								<input type="submit" class="btn btn-primary" value="Υποβολή">
+								<input type="reset" class="btn btn-warning" value="Αρχικοποίηση">
+							</div>
+						</div>
+					</section>
+				</form>
 				<section class="col-2 carousel slide mx-auto" data-ride="carousel" id="advertisments">
 					<div class="carousel-inner">
 						<div class="carousel-item active">

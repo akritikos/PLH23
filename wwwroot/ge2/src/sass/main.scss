@@ -1,32 +1,59 @@
-#content {
-	padding-top: 5em;
-}
-.social {
-	padding-right: 1em;
-	img {
-		height: 1.75em;
+body {
+	> div.container, > div.container-fluid {
+		padding-top: 6em;
+		padding-bottom: 4em;
 	}
 }
+
 .thumbnail {
 	border-radius: 30%;
 }
 
-.navbar-brand {
-	width: auto;
-	height: 2em;
+nav.navbar {
+	.navbar-brand {
+		width: auto;
+		height: 2em;
+	}
+	div.navbar-nav {
+		.nav-link.active {
+			color: #007bff;
+		}
+	}
+	.social {
+		padding-right: 1em;
+		img {
+			height: 1.75em;
+		}
+	}
+}
+
+article#article {
+	.article-reblog {
+		.btn {
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+			width: 100%;
+		}
+	}
 }
 
 #articles {
-	article {
-		header {
-			margin-bottom: 0.5em;
+	> article {
+		> header {
+			margin-bottom: -2em;
+			> a {
+				color: #333;
+				font-weight: bold;
+				font-size: 1.2em;
+				text-decoration: none;
+			}
 		}
-		margin-right: 0.5em;
-		> .alert{
-			display: inline-block;
-			max-height: 9.5em;
+		> .summary {
 			> p {
-				height:100%;
+				display: -webkit-box;
+				-webkit-line-clamp: 7;
+				-webkit-box-orient: vertical;
+				max-height: 12em;
 				overflow: hidden;
 				text-overflow: ellipsis;
 			}
@@ -34,17 +61,12 @@
 	}
 	margin-left: 0.5em;
 }
+
 .required {
 	color: red;
 }
-#form > div {
-	> label {
-		display: block;
-		margin-bottom: 1em;
-	}
 
-}
-#footer{
+#footer {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	background: #efefef;
